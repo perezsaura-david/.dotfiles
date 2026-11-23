@@ -23,7 +23,7 @@ pip3 install pynvim
 1. Clone the repository into ```~/.dotfiles```
 
 ```
-$ git clone https://github.com/miferco97/.dotfiles.git $HOME/.dotfiles 
+$ git clone https://github.com/perezsaura-david/.dotfiles.git $HOME/.dotfiles 
 ```
 
 Run the following commands: 
