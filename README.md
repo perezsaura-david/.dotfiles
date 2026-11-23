@@ -48,7 +48,7 @@ For installing basic languages run the desired command into nvim:
 ## Vimspector (https://github.com/puremourning/vimspector#vimspector---a-multi-language-graphical-debugger-for-vim )
 For setup vimspector plugin run: 
 ```
-$ cd $HOME/.local/share/nvim/plugged/vimspector
+$ cd $HOME/.local/share/nvim/lazy/vimspector
 $ ./install_gadget.py --all
 ```
 After that you must add a ```.vimspector.json ``` in the root folder of your project with your desired configuration.
