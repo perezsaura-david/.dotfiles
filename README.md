@@ -5,19 +5,6 @@ For setting up the configuration of :
 - Zsh with OhMyZsh (https://ohmyz.sh/ )
 
 
-## Install dependencies:
-```
-# install NeoVim
-sudo add-apt-repository ppa:neovim-ppa/unstable
-sudo apt update
-sudo apt install neovim
-
-# install Neovim plugins dependencies
-sudo apt-get install xclip ripgrep
-pip3 install pynvim 
-
-```
-
 ## Setup steps:
 
 1. Clone the repository into ```~/.dotfiles```
@@ -26,17 +13,22 @@ pip3 install pynvim
 $ git clone https://github.com/perezsaura-david/.dotfiles.git $HOME/.dotfiles 
 ```
 
-Run the following commands: 
+2. Run the installer, which installs NeoVim, Tmux, Zsh/OhMyZsh, the
+   Neovim plugin dependencies (xclip, ripgrep, pynvim), a Nerd Font for
+   the prompt icons, then symlinks the configs and installs the nvim
+   plugins:
+
 ```
 $ cd ~/.dotfiles
-$ bash core_setup.bash # Download and install Neovim, Tmux, Zsh and i3
-
-Reload a new terminal
-$ cd ~/.dotfiles
-$ zsh plugin_setup.zsh # Install nvim plugins
+$ bash install.sh
 ```
 
->[INFO] My zsh theme is powerlevel10k, if you want to use the recommended fonts follow this instructions: https://github.com/romkatv/powerlevel10k#fonts
+3. Start a new terminal (or run ```exec zsh```) to pick up the new shell.
+
+>[INFO] My zsh theme is powerlevel10k. `install.sh` installs the recommended
+>"MesloLGS NF" font automatically, but you still need to set it as your
+>terminal emulator's font yourself. See https://github.com/romkatv/powerlevel10k#fonts
+>for details.
 
 ## Coc languages Servers (https://github.com/neoclide/coc.nvim)
 
