@@ -4,7 +4,7 @@
 pushd $DOTFILES
 for folder in $(echo $STOW_FOLDERS | sed "s/,/ /g")
 do
-    files=$(find $folder -d -maxdepth 1 | grep /)
+    files=$(find $folder -depth -maxdepth 1 | grep /)
     for file in $files
     do
         file_to_link_test=${file##*/}

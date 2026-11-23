@@ -3,6 +3,7 @@ vim.g.mapleader = ' '
 
 -- esential command
 vim.keymap.set('i','jj','<ESC>')
+vim.keymap.set('n','<leader>w',':w <CR>')
 
 -- resize helpers
 vim.keymap.set('n','<leader>+',':vertical resize +5 <CR>')

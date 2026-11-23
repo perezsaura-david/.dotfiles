@@ -5,12 +5,6 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-# autoload bashcompinit
-# bashcompinit
-# eval "$(register-python-argcomplete3 ros2)"
-# eval "$(register-python-argcomplete3 colcon)"
-
-
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -94,7 +88,6 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -120,21 +113,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-#cd ~
-#
-#export DISPLAY=$(awk '/nameserver / {print $2; exit}' /etc/resolv.conf 2>/dev/null):0 # in WSL 2
-#export LIBGL_ALWAYS_INDIRECT=1
-#export XDG_RUNTIME_DIR="~/xdg_runtime_dir/"
-#export RUNLEVEL=3
-#
-##ROS2
-#source /opt/ros/foxy/setup.bash
-#
-#export PATH=$PATH:/usr/bin/
-#export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/include/:/usr/lib/
-#
-#alias nvim='~/.config/nvim/nvim.appimage'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -172,6 +150,5 @@ bindkey "^[[1;5A" up-line-or-history    # [CTRL] + Cursor up
 bindkey "^[[1;5B" down-line-or-history  # [CTRL] + Cursor down
 
 source $HOME/.zsh_profile
-
-eval "$(register-python-argcomplete3 ros2)"
-eval "$(register-python-argcomplete3 colcon)"
+export PATH="/home/dps/.pixi/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
